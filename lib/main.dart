@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'di.dart';
-import 'core/pathfinding/presentation/screens/pathfinding_screen.dart';
+import 'features/pathfinding/presentation/screens/pathfinding_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import '../../../failures/failures.dart';
+import '../../../../core/failures/failures.dart';
 import '../../domain/entities/map_grid.dart';
 import '../../domain/entities/path.dart';
 import '../../domain/entities/point.dart';

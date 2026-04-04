@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import '../../../failures/failures.dart';
+import '../../../../core/failures/failures.dart';
 import '../models/map_grid_model.dart';
 
 abstract class MapLocalDataSource {

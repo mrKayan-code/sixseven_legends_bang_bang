@@ -124,7 +124,7 @@ class _PathPainter extends CustomPainter {
 
   void _drawDot(Point p, Color color, Canvas c) {
     final center = Offset(p.col * cellSize + cellSize/2, p.row * cellSize + cellSize/2);
-    final r = cellSize / 2.5;
+    final r = cellSize / 2;
     c.drawCircle(center, r, Paint()..color = color);
     c.drawCircle(center, r, Paint()..color = Colors.white..style = PaintingStyle.stroke..strokeWidth = 2);
   }
@@ -145,7 +145,7 @@ class _TapHandler extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(width: size.width, height: size.height,
       child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
+        behavior: HitTestBehavior.translucent,
         onTapUp: (d) {
           final c = (d.localPosition.dx / cellSize).floor();
           final r = (d.localPosition.dy / cellSize).floor();

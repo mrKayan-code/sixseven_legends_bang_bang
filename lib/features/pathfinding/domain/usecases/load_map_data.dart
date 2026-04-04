@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import '../../../failures/failures.dart';
+import '../../../../core/failures/failures.dart';
 import '../entities/map_grid.dart';
 import '../repositories/pathfinding_repository.dart';
 

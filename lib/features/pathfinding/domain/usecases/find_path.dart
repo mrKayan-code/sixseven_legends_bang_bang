@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import '../../../failures/failures.dart';
+import '../../../../core/failures/failures.dart';
 import '../entities/path.dart';
 import '../entities/point.dart';
 import '../repositories/pathfinding_repository.dart';
