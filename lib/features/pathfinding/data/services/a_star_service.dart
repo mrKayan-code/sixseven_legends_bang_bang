@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
-import '../../domain/entities/map_grid.dart';
-import '../../domain/entities/path.dart';
-import '../../domain/entities/point.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/map_grid.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/path.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/point.dart';
 
 class _Node {
   final Point point;

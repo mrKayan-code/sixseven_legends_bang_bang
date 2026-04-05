@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
-import '../../../../core/failures/failures.dart';
-import '../../domain/entities/map_grid.dart';
-import '../../domain/entities/path.dart';
-import '../../domain/entities/point.dart';
-import '../../domain/repositories/pathfinding_repository.dart';
-import '../datasources/map_local_data_source.dart';
-import '../services/a_star_service.dart';
+import 'package:mapjacks/core/failures/failures.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/map_grid.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/path.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/point.dart';
+import 'package:mapjacks/features/pathfinding/domain/repositories/pathfinding_repository.dart';
+import 'package:mapjacks/features/pathfinding/data/datasources/map_local_data_source.dart';
+import 'package:mapjacks/features/pathfinding/data/services/a_star_service.dart';
 
 class PathfindingRepositoryImpl implements PathfindingRepository {
   final MapLocalDataSource local;

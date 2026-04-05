@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import '../../../../core/failures/failures.dart';
-import '../models/map_grid_model.dart';
+import 'package:mapjacks/core/failures/failures.dart';
+import 'package:mapjacks/features/pathfinding/data/models/map_grid_model.dart';
 
 abstract class MapLocalDataSource {
   Future<MapGridModel> loadMap(String assetPath);

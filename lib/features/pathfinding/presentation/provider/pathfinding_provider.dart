@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
-import '../../domain/entities/map_grid.dart';
-import '../../domain/entities/path.dart';
-import '../../domain/entities/point.dart';
-import '../../domain/usecases/find_path.dart';
-import '../../domain/usecases/load_map_data.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/map_grid.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/path.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/point.dart';
+import 'package:mapjacks/features/pathfinding/domain/usecases/find_path.dart';
+import 'package:mapjacks/features/pathfinding/domain/usecases/load_map_data.dart';
 
 enum SelectionMode { none, start, end }
 enum PathStatus { initial, loading, success, error }

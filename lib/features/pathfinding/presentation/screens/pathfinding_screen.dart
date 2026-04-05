@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../provider/pathfinding_provider.dart';
-import '../widgets/map_canvas.dart';
-import '../widgets/map_controls.dart';
-import '../widgets/map_status.dart';
+import 'package:mapjacks/features/pathfinding/presentation/provider/pathfinding_provider.dart';
+import 'package:mapjacks/features/pathfinding/presentation/widgets/map_canvas.dart';
+import 'package:mapjacks/features/pathfinding/presentation/widgets/map_controls.dart';
+import 'package:mapjacks/features/pathfinding/presentation/widgets/map_status.dart';
 
 class PathfindingScreen extends StatefulWidget {
   const PathfindingScreen({super.key});

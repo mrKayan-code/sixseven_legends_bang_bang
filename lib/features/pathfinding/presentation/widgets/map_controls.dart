@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../provider/pathfinding_provider.dart';
+import 'package:mapjacks/features/pathfinding/presentation/provider/pathfinding_provider.dart';
 
 class MapControls extends StatelessWidget {
   const MapControls({super.key});

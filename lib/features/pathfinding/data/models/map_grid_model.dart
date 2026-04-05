@@ -1,4 +1,4 @@
-import '../../domain/entities/map_grid.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/map_grid.dart';
 
 class MapGridModel extends MapGrid {
   const MapGridModel({

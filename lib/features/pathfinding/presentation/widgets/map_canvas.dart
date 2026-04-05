@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../domain/entities/point.dart';
-import '../provider/pathfinding_provider.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/point.dart';
+import 'package:mapjacks/features/pathfinding/presentation/provider/pathfinding_provider.dart';
 
 class MapCanvas extends StatelessWidget {
   final String imagePath;
