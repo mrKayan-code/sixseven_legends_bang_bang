@@ -11,6 +11,10 @@ class PathfindingFailure extends Failure {
   const PathfindingFailure({required super.message});
 }
 
+class ClusteringFailure extends Failure {
+  const ClusteringFailure({required super.message});
+}
+
 class UnexpectedFailure extends Failure {
   const UnexpectedFailure({required super.message});
 }

@@ -43,7 +43,10 @@ class PathfindingProvider extends ChangeNotifier {
         _status = PathStatus.error;
         _error = failure.message;
       },
-      (grid) => _grid = grid,
+      (grid) {
+        _grid = grid;
+        _status = PathStatus.initial;  
+      },
     );
     notifyListeners();
   }

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'point.dart';
+import 'package:mapjacks/features/pathfinding/domain/entities/point.dart';
 
 class Path extends Equatable {
   final List<Point> points;

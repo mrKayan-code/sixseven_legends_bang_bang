@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:mapjacks/core/routes/app_router.dart';
+import 'package:mapjacks/core/routes/app_routes.dart';
 import 'package:provider/provider.dart';
-import 'di.dart';
-import 'features/pathfinding/presentation/screens/pathfinding_screen.dart';
+import 'package:mapjacks/di.dart';
+import 'package:mapjacks/features/pathfinding/presentation/screens/pathfinding_screen.dart';
 
-void main() {
+import 'di.dart';
+
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // await init();
+  
   runApp(const MyApp());
 }
 
@@ -16,11 +29,21 @@ class MyApp extends StatelessWidget {
       providers: getProviders(),
       child: MaterialApp(
         title: 'ТГУ кампус 67',
+
+        onGenerateRoute: AppRouter.generateRoute,
+        initialRoute: AppRoutes.pathfinding,
+        onUnknownRoute: (settings) => AppRouter.generateRoute(
+          RouteSettings(name: '/error', arguments: 'Неизвестный маршрут'),
+        ),
+
+
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
           useMaterial3: true,
+          navigationBarTheme: NavigationBarThemeData(
+            indicatorColor: Theme.of(context).colorScheme.primaryContainer,
+          ),
         ),
-        home: const PathfindingScreen(),
       ),
     );
   }
