@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 abstract class AppRoutes {
   static const String pathfinding = '/pathfinding';
   static const String clustering = '/clustering';
+  static const String rating = '/rating';
 }
 
 class RouteMeta {
@@ -27,5 +28,10 @@ const List<RouteMeta> availableRoutes = [
     name: AppRoutes.clustering,
     label: 'Зоны питания',
     icon: Icons.restaurant,
+  ),
+  RouteMeta(
+    name: AppRoutes.rating,
+    label: 'Оценка',
+    icon: Icons.star_border_rounded,
   ),
 ];

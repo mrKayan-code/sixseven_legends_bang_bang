@@ -14,7 +14,7 @@ import 'package:mapjacks/features/clustering/data/services/clustering_service.da
 import 'package:mapjacks/features/clustering/domain/repositories/clustering_repository.dart';
 import 'package:mapjacks/features/clustering/domain/usecases/cluster_food_points.dart';
 import 'package:mapjacks/features/clustering/presentation/provider/clustering_provider.dart';
-
+import 'package:mapjacks/features/rating/presentation/provider/rating_provider.dart';
 Future<void> init() async {
   //TODO(перенести сюда инит стейты)
 }
@@ -73,5 +73,9 @@ List<SingleChildWidget> getProviders() => [
     create: (ctx) => ClusteringProvider(
       clusterFoodPoints: ctx.read<ClusterFoodPoints>(),
     ),
+  ),
+
+  ChangeNotifierProvider<RatingProvider>(
+    create: (_) => RatingProvider(),
   ),
 ];
