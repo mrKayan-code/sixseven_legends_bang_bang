@@ -3,6 +3,7 @@ import 'package:mapjacks/core/routes/app_routes.dart';
 import 'package:mapjacks/features/pathfinding/presentation/screens/pathfinding_screen.dart';
 import 'package:mapjacks/features/clustering/presentation/screens/clustering_screen.dart';
 import 'package:mapjacks/features/rating/presentation/screens/rating_screen.dart';
+import '../../features/decision_tree/presentation/screens/decision_tree_screen.dart';
 
 class AppRouter {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
@@ -17,6 +18,9 @@ class AppRouter {
 
       case AppRoutes.rating:
         return _buildRoute(const RatingScreen(), settings);
+
+      case AppRoutes.decisionTree:
+      return MaterialPageRoute(builder: (_) => const DecisionTreeScreen());
       
       default:
         return _buildErrorRoute('Маршрут не найден: ${settings.name}');

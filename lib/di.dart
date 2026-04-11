@@ -15,6 +15,7 @@ import 'package:mapjacks/features/clustering/domain/repositories/clustering_repo
 import 'package:mapjacks/features/clustering/domain/usecases/cluster_food_points.dart';
 import 'package:mapjacks/features/clustering/presentation/provider/clustering_provider.dart';
 import 'package:mapjacks/features/rating/presentation/provider/rating_provider.dart';
+import 'package:mapjacks/features/decision_tree/presentation/provider/decision_tree_provider.dart';
 Future<void> init() async {
   //TODO(перенести сюда инит стейты)
 }
@@ -78,4 +79,8 @@ List<SingleChildWidget> getProviders() => [
   ChangeNotifierProvider<RatingProvider>(
     create: (_) => RatingProvider(),
   ),
+
+  ChangeNotifierProvider(
+    create: (_) => DecisionTreeProvider()
+    ),
 ];
