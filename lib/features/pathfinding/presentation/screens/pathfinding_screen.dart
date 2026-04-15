@@ -112,7 +112,7 @@ class _ErrorView extends StatelessWidget {
         children: [
           const Icon(Icons.error_outline, size: 48, color: Colors.red),
           const SizedBox(height: 16),
-          Text('Не удалось загрузить карту: ${message ?? "ошибка"}',
+          Text('Не удалось построить маршрут: ${message ?? "ошибка"}',
               textAlign: TextAlign.center),
           const SizedBox(height: 24),
           ElevatedButton(

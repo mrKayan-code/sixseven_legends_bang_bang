@@ -4,132 +4,170 @@
     "name": "Абрикос",
     "row": 7,
     "col": 15,
-    "type": "shop"
+    "type": "shop",
+    "menu": ["snack", "drink", "coffee"],
+    "has_utensils": false
   },
   {
     "id": "syr_bor",
     "name": "Сыр Бор",
     "row": 34,
     "col": 130,
-    "type": "canteen"
+    "type": "canteen",
+    "menu": ["full_meal", "soup", "salad", "drink"],
+    "has_utensils": true
   },
   {
     "id": "starbooks_main",
     "name": "Старбукс",
     "row": 34,
     "col": 125,
-    "type": "coffee"
+    "type": "coffee",
+    "menu": ["coffee", "snack", "dessert"],
+    "has_utensils": true
   },
   {
     "id": "starbooks_small",
     "name": "Старбукс",
     "row": 85,
     "col": 129,
-    "type": "coffee"
+    "type": "coffee",
+    "menu": ["coffee", "snack"],
+    "has_utensils": true
   },
   {
     "id": "sib_bliny",
     "name": "Сибирские блины",
     "row": 95,
     "col": 140,
-    "type": "fastfood"
+    "type": "fastfood",
+    "menu": ["pancakes", "coffee", "drink", "dessert"],
+    "has_utensils": true
   },
   {
     "id": "cafe_minutka",
     "name": "Кафе Минутка",
     "row": 94,
     "col": 147,
-    "type": "canteen"
+    "type": "canteen",
+    "menu": ["full_meal", "soup", "salad", "drink", "coffee"],
+    "has_utensils": true
   },
   {
     "id": "sto_lovaya",
     "name": "100ловая",
     "row": 89,
     "col": 142,
-    "type": "canteen"
+    "type": "canteen",
+    "menu": ["full_meal", "soup", "salad", "drink"],
+    "has_utensils": true
   },
   {
     "id": "vendor_machine_0",
     "name": "Вендорный автомат",
     "row": 92,
     "col": 141,
-    "type": "vendor_machine"
+    "type": "vendor_machine",
+    "menu": ["snack", "drink"],
+    "has_utensils": false
   },
   {
     "id": "vendor_machine_1",
     "name": "Вендорный автомат",
     "row": 96,
     "col": 163,
-    "type": "vendor_machine"
+    "type": "vendor_machine",
+    "menu": ["snack", "drink"],
+    "has_utensils": false
   },
   {
     "id": "vendor_machine_2",
     "name": "Вендорный автомат",
     "row": 136,
     "col": 102,
-    "type": "vendor_machine"
+    "type": "vendor_machine",
+    "menu": ["snack", "drink"],
+    "has_utensils": false
   },
   {
     "id": "vendor_machine_3",
     "name": "Вендорный автомат",
     "row": 107,
     "col": 101,
-    "type": "vendor_machine"
+    "type": "vendor_machine",
+    "menu": ["snack", "drink"],
+    "has_utensils": false
   },
   {
     "id": "zabegalovka_0",
     "name": "Забегаловка",
     "row": 119,
     "col": 103,
-    "type": "vendor_machine"
+    "type": "fastfood",
+    "menu": ["snack", "drink", "coffee"],
+    "has_utensils": true
   },
   {
     "id": "zabegalovka_1",
     "name": "Забегаловка",
     "row": 147,
     "col": 129,
-    "type": "vendor_machine"
+    "type": "fastfood",
+    "menu": ["snack", "drink"],
+    "has_utensils": true
   },
   {
     "id": "cafe_z",
     "name": "Кафе \"Z\"",
     "row": 126,
     "col": 106,
-    "type": "coffee"
+    "type": "coffee",
+    "menu": ["coffee", "snack", "dessert"],
+    "has_utensils": false
   },
   {
     "id": "nash_gastronom",
     "name": "НАШ Гастроном",
     "row": 91,
     "col": 301,
-    "type": "shop"
+    "type": "shop",
+    "menu": ["snack", "drink", "full_meal"],
+    "has_utensils": false
   },
   {
     "id": "kfc",
     "name": "Кифас",
     "row": 104,
     "col": 248,
-    "type": "fastfood"
+    "type": "fastfood",
+    "menu": ["full_meal", "snack", "drink", "dessert"],
+    "has_utensils": true
   },
   {
     "id": "yarche",
     "name": "Ярче",
     "row": 2,
     "col": 301,
-    "type": "shop"
+    "type": "shop",
+    "menu": ["snack", "drink", "coffee", "full_meal"],
+    "has_utensils": true
   },
   {
     "id": "cafe_belka",
     "name": "Кафе Белочка",
     "row": 19,
     "col": 221,
-    "type": "coffee"
+    "type": "coffee",
+    "menu": ["coffee", "snack", "dessert", "drink"],
+    "has_utensils": false
   },
   {
     "id": "baget_omlet",
     "name": "Багет Омлет",
     "row": 68,
     "col": 254,
-    "type": "fastfood"
+    "type": "fastfood",
+    "menu": ["full_meal", "snack", "drink", "coffee"],
+    "has_utensils": true
   }
 ]

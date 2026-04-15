@@ -85,16 +85,17 @@ class PathfindingProvider extends ChangeNotifier {
     _findPath(start: _start!, end: _end!, grid: _grid!).then((result) {
       result.fold(
         (failure) {
-          _status = PathStatus.error;
-          _error = failure.message;
+          // _status = PathStatus.error;
+          // _error = failure.message;
+          clear(); 
         },
         (path) {
           if (path.isValid) {
             _path = path;
             _status = PathStatus.success;
           } else {
-            _status = PathStatus.error;
-            _error = 'Маршрут не найден';
+            clear(); 
+            // _error = 'Маршрут не найден';
           }
         },
       );
