@@ -4,6 +4,7 @@ abstract class AppRoutes {
   static const String pathfinding = '/pathfinding';
   static const String clustering = '/clustering';
   static const String rating = '/rating';
+  static const String decisionTree = '/decision_tree';
 }
 
 class RouteMeta {
@@ -34,4 +35,11 @@ const List<RouteMeta> availableRoutes = [
     label: 'Оценка',
     icon: Icons.star_border_rounded,
   ),
+
+  RouteMeta(
+    name: AppRoutes.decisionTree,
+    label: 'Советник',
+    icon: Icons.psychology_alt,
+  ),
 ];
+
