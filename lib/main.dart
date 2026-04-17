@@ -3,13 +3,9 @@ import 'package:mapjacks/core/routes/app_router.dart';
 import 'package:mapjacks/core/routes/app_routes.dart';
 import 'package:provider/provider.dart';
 import 'package:mapjacks/di.dart';
-import 'package:mapjacks/features/pathfinding/presentation/screens/pathfinding_screen.dart';
 
-import 'di.dart';
 
-import 'dart:convert';
 
-import 'package:flutter/services.dart';
 
 
 void main() async {

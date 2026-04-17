@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mapjacks/core/routes/app_routes.dart';
 import 'package:mapjacks/core/widgets/scaffold_with_navbar.dart';
-import 'package:mapjacks/features/clustering/presentation/screens/clustering_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:mapjacks/features/pathfinding/presentation/provider/pathfinding_provider.dart';
 import 'package:mapjacks/features/pathfinding/presentation/widgets/map_canvas.dart';

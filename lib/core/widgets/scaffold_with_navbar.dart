@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mapjacks/core/routes/app_routes.dart';
 import 'package:mapjacks/core/widgets/app_navbar.dart';
 
 class ScaffoldWithNavBar extends StatelessWidget {

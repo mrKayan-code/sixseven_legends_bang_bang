@@ -151,7 +151,7 @@ class _DecisionTreeScreenState extends State<DecisionTreeScreen> {
           labelText: label,
           border: const OutlineInputBorder(),
         ),
-        value: value,
+        initialValue: value,
         items: items.entries.map((entry) => DropdownMenuItem(value: entry.key, child: Text(entry.value))).toList(),
         onChanged: onChanged,
       ),

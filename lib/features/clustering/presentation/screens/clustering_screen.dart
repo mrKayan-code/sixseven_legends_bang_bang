@@ -61,7 +61,7 @@ class _ClusteringScreenState extends State<ClusteringScreen> {
   Widget _buildControls(ClusteringProvider provider) {
     return Container(
       padding: const EdgeInsets.all(12),
-      color: Theme.of(context).colorScheme.surfaceVariant,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
       child: Row(
         children: [
           const Text('K: ', style: TextStyle(fontWeight: FontWeight.bold)),

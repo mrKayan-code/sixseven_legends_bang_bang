@@ -5,6 +5,7 @@ abstract class AppRoutes {
   static const String clustering = '/clustering';
   static const String rating = '/rating';
   static const String decisionTree = '/decision_tree';
+  static const String genetic = '/genetic';
 }
 
 class RouteMeta {
@@ -41,5 +42,10 @@ const List<RouteMeta> availableRoutes = [
     label: 'Советник',
     icon: Icons.psychology_alt,
   ),
+
+  RouteMeta(
+    name: AppRoutes.genetic, 
+    label: 'Маршрут', 
+    icon: Icons.coronavirus),
 ];
 

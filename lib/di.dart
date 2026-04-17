@@ -16,6 +16,15 @@ import 'package:mapjacks/features/clustering/domain/usecases/cluster_food_points
 import 'package:mapjacks/features/clustering/presentation/provider/clustering_provider.dart';
 import 'package:mapjacks/features/rating/presentation/provider/rating_provider.dart';
 import 'package:mapjacks/features/decision_tree/presentation/provider/decision_tree_provider.dart';
+
+
+import 'features/genetic/data/datasources/genetic_data_source.dart';
+import 'features/genetic/data/repositories/genetic_repository_impl.dart';
+import 'features/genetic/data/services/genetic_algorithm_service.dart';
+import 'features/genetic/domain/repositories/genetic_repository.dart';
+import 'features/genetic/domain/usecases/find_optimal_route.dart';
+import 'features/genetic/presentation/provider/genetic_provider.dart';
+
 Future<void> init() async {
   //TODO(перенести сюда инит стейты)
 }
@@ -83,4 +92,26 @@ List<SingleChildWidget> getProviders() => [
   ChangeNotifierProvider(
     create: (_) => DecisionTreeProvider()
     ),
+
+
+  Provider<GeneticDataSource>(create: (_) => GeneticDataSourceImpl()),
+  
+  Provider<GeneticAlgorithmService>(create: (_) => GeneticAlgorithmService()),
+  
+  Provider<GeneticRepository>(
+    create: (ctx) => GeneticRepositoryImpl(
+      dataSource: ctx.read<GeneticDataSource>(),
+      geneticService: ctx.read<GeneticAlgorithmService>(),
+    ),
+  ),
+  
+  Provider<FindOptimalRoute>(
+    create: (ctx) => FindOptimalRoute(ctx.read<GeneticRepository>()),
+  ),
+  
+  ChangeNotifierProvider<GeneticProvider>(
+    create: (ctx) => GeneticProvider(
+      findOptimalRoute: ctx.read<FindOptimalRoute>(),
+    ),
+  ),
 ];

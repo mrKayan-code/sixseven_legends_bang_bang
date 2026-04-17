@@ -19,7 +19,7 @@ class FindOptimalRoute {
     int populationSize = 50,
     int maxGenerations = 100,
     double mutationRate = 0.1,
-  }) {
+  }) async {
     if (points.isEmpty) {
       return Left(GeneticFailure(message: 'Нет заведений'));
     }
