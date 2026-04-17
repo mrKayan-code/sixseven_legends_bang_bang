@@ -3,6 +3,8 @@ import 'package:mapjacks/core/routes/app_routes.dart';
 import 'package:mapjacks/features/pathfinding/presentation/screens/pathfinding_screen.dart';
 import 'package:mapjacks/features/clustering/presentation/screens/clustering_screen.dart';
 import 'package:mapjacks/features/rating/presentation/screens/rating_screen.dart';
+import '../../features/decision_tree/presentation/screens/decision_tree_screen.dart';
+import 'package:mapjacks/features/ant_colony/presentation/screens/ant_colony_screen.dart';
 import 'package:mapjacks/features/decision_tree/presentation/screens/decision_tree_screen.dart';
 import 'package:mapjacks/features/genetic/presentation/screens/genetic_screens.dart';
 
@@ -22,6 +24,9 @@ class AppRouter {
 
       case AppRoutes.decisionTree:
         return MaterialPageRoute(builder: (_) => const DecisionTreeScreen());
+
+      case AppRoutes.antColony:
+      return _buildRoute(const AntColonyScreen(), settings);
     
       case AppRoutes.genetic:
         return _buildRoute(const GeneticScreen(), settings);

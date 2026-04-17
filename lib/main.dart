@@ -5,14 +5,8 @@ import 'package:provider/provider.dart';
 import 'package:mapjacks/di.dart';
 
 
-
-
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
-  // await init();
-  
   runApp(const MyApp());
 }
 

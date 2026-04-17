@@ -17,6 +17,10 @@ import 'package:mapjacks/features/clustering/presentation/provider/clustering_pr
 import 'package:mapjacks/features/rating/presentation/provider/rating_provider.dart';
 import 'package:mapjacks/features/decision_tree/presentation/provider/decision_tree_provider.dart';
 
+import 'package:mapjacks/features/ant_colony/data/services/ant_colony_service.dart';
+import 'package:mapjacks/features/ant_colony/presentation/provider/ant_colony_provider.dart';
+
+
 
 import 'features/genetic/data/datasources/genetic_data_source.dart';
 import 'features/genetic/data/repositories/genetic_repository_impl.dart';
@@ -92,6 +96,16 @@ List<SingleChildWidget> getProviders() => [
   ChangeNotifierProvider(
     create: (_) => DecisionTreeProvider()
     ),
+
+  Provider<AntColonyService>(
+    create: (_) => AntColonyService(),
+  ),
+
+  ChangeNotifierProvider<AntColonyProvider>(
+    create: (ctx) => AntColonyProvider(
+      ctx.read<AntColonyService>(),
+    ),
+  ),
 
 
   Provider<GeneticDataSource>(create: (_) => GeneticDataSourceImpl()),
