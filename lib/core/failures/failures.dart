@@ -18,3 +18,7 @@ class ClusteringFailure extends Failure {
 class UnexpectedFailure extends Failure {
   const UnexpectedFailure({required super.message});
 }
+
+class GeneticFailure extends Failure {
+  const GeneticFailure({required super.message});
+}
