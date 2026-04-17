@@ -5,6 +5,7 @@ abstract class AppRoutes {
   static const String clustering = '/clustering';
   static const String rating = '/rating';
   static const String decisionTree = '/decision_tree';
+  static const String antColony = '/ant_colony';
 }
 
 class RouteMeta {
@@ -40,6 +41,12 @@ const List<RouteMeta> availableRoutes = [
     name: AppRoutes.decisionTree,
     label: 'Советник',
     icon: Icons.psychology_alt,
+  ),
+
+  RouteMeta(
+    name: AppRoutes.antColony,
+    label: 'Муравьи',
+    icon: Icons.route,
   ),
 ];
 

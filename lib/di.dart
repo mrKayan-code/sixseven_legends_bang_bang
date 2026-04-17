@@ -16,6 +16,10 @@ import 'package:mapjacks/features/clustering/domain/usecases/cluster_food_points
 import 'package:mapjacks/features/clustering/presentation/provider/clustering_provider.dart';
 import 'package:mapjacks/features/rating/presentation/provider/rating_provider.dart';
 import 'package:mapjacks/features/decision_tree/presentation/provider/decision_tree_provider.dart';
+
+import 'package:mapjacks/features/ant_colony/data/services/ant_colony_service.dart';
+import 'package:mapjacks/features/ant_colony/presentation/provider/ant_colony_provider.dart';
+
 Future<void> init() async {
   //TODO(перенести сюда инит стейты)
 }
@@ -83,4 +87,14 @@ List<SingleChildWidget> getProviders() => [
   ChangeNotifierProvider(
     create: (_) => DecisionTreeProvider()
     ),
+
+  Provider<AntColonyService>(
+    create: (_) => AntColonyService(),
+  ),
+
+  ChangeNotifierProvider<AntColonyProvider>(
+    create: (ctx) => AntColonyProvider(
+      ctx.read<AntColonyService>(),
+    ),
+  ),
 ];

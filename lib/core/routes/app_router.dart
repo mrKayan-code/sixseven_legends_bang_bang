@@ -4,6 +4,7 @@ import 'package:mapjacks/features/pathfinding/presentation/screens/pathfinding_s
 import 'package:mapjacks/features/clustering/presentation/screens/clustering_screen.dart';
 import 'package:mapjacks/features/rating/presentation/screens/rating_screen.dart';
 import '../../features/decision_tree/presentation/screens/decision_tree_screen.dart';
+import 'package:mapjacks/features/ant_colony/presentation/screens/ant_colony_screen.dart';
 
 class AppRouter {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
@@ -21,6 +22,9 @@ class AppRouter {
 
       case AppRoutes.decisionTree:
       return MaterialPageRoute(builder: (_) => const DecisionTreeScreen());
+
+      case AppRoutes.antColony:
+      return _buildRoute(const AntColonyScreen(), settings);
       
       default:
         return _buildErrorRoute('Маршрут не найден: ${settings.name}');
