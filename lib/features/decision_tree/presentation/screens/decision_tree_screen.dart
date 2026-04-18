@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mapjacks/core/routes/app_routes.dart';
+import 'package:mapjacks/core/widgets/scaffold_with_navbar.dart';
 import 'package:provider/provider.dart';
 import '../provider/decision_tree_provider.dart';
 
@@ -19,7 +21,8 @@ class _DecisionTreeScreenState extends State<DecisionTreeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return ScaffoldWithNavBar(
+      currentRoute: AppRoutes.decisionTree,
       appBar: AppBar(
         title: const Text('Куда пойти на обед?'),
       ),
